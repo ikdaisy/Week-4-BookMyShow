@@ -411,6 +411,10 @@ background-color: #F5F5F5;
     font-weight: bold;
 }
 
+#section_8 span{
+    color: grey;
+}
+
 #section_7 span{
     margin-top: 20px;
     color: grey;
