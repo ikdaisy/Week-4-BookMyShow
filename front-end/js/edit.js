@@ -60,11 +60,11 @@ async function editMovie(){
             </select>
 
             <label for="poster">Poster:</label>
-            <input type="file" id="poster" name="poster" onchange="getPoster()"   required>
+            <input type="file" id="poster" name="poster" onchange="getPoster()"   >
             <div><img src="${data.poster}" alt="" id="poster-img" width="100px" height="100px"></div>
 
             <label for="banner">Banner:</label>
-            <input type="file" id="banner" name="banner"  onchange="getBanner()" required>
+            <input type="file" id="banner" name="banner"  onchange="getBanner()" >
             <div><img src="${data.banner}" alt=""   width="200px" height="100px"id="banner-img"></div>
 
            
