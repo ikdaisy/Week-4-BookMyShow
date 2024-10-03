@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details Form</title>
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Details</h1>
+        <form id="frm" method="POST" enctype="multipart/form-data">
+            <label for="title">Movie Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="rating">Rating (out of 10):</label>
+            <input type="number" id="rating" name="rating" required>
+            
+            <select id="screenTypeDropdown">
+                <option value="">Select Screen Type</option>
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
+                <option value="IMAX">IMAX</option>
+                <option value="4DX">4DX</option>
+                </select>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="text" id="duration" name="duration" required>
+
+           
+
+            <select id="genreDropdown">
+                <option value="">Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Romance">Romance</option>
+                </select>
+
+            <label for="release-date">Release Date:</label>
+            <input type="date" id="releaseDate" name="releaseDate" required>
+
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" required>
+
+            <label for="certification">Certification:</label>
+            <select id="certification" name="certification" required>
+                <option value="">Select Certification</option>
+
+                <option value="U">U</option>
+                <option value="UA">UA</option>
+                <option value="A">A</option>
+                <option value="S">S</option>
+            </select>
+
+            <label for="poster">Poster:</label>
+            <input type="file" id="poster" name="poster" onchange="getPoster()"   required>
+            <div><img src="" alt="" id="poster-img" width="100px" height="100px"></div>
+
+            <label for="banner">Banner:</label>
+            <input type="file" id="banner" name="banner"  onchange="getBanner()" required>
+            <div><img src="" alt=""   width="200px" height="100px"id="banner-img"></div>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="../js/add.js"></script>
+</body>
+</html>
